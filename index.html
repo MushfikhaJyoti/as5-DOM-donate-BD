@@ -20,12 +20,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body>
-    <header class=" sticky top-0 backdrop-sepia-0">
+<body class="relative">
+    <header class=" sticky top-0 backdrop-blur-md">
     <!-- navbar starts here -->
      <nav class="bg-[#f3f1e6]">    
          <div class="flex justify-around w-full lg:w-11/12 mx-auto pt-6 pb-16">
-            <button class= "btn bg-[#B4F461] text-lg px-8 font-bold border-none">Blog</button>
+            <button id="btn-blog" class= "btn bg-[#B4F461] text-lg px-8 font-bold border-none">Blog</button>
             <p class="flex justify-center items-center text-lg font-extrabold gap-2"> <img class="w-8 border-2 border-dashed" src="assets/logo.png" alt=""> Donate Bnagladesh</p>
             <p id="nav-amount" class="flex justify-center items-center gap-2 font-bold"><img class="border-2 border-dashed" src="assets/coin.png" alt="">5500 BDT</p>
          </div>
@@ -48,8 +48,19 @@
             <button class="btn mb-5"><img src="assets/coin.png" alt=""> <span id="nk-donation-amount">500</span> BDT</button>
             <h4 class="text-lg font-bold mb-5">Donate for Flood at Noakhali, Bangladesh</h4>
             <p class="mb-5">The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-            <input id="noakhali-input-field" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mb-5"/>                                                                    
-            <button class= "btn bg-[#B4F461] text-lg px-8 font-bold border-none w-full mb-5">Donate Now</button>
+            <input id="noakhali-input-field" type="text" placeholder="Write Donation Amount" onblur="checkInput()" class="input input-bordered w-full mb-5"/>                                                                    
+            <button class= "btn bg-[#B4F461] text-lg px-8 font-bold border-none w-full mb-5" onclick="openPopup()">Donate Now</button>
+
+            <!-- modal html -->
+            <div id="my-modal" class="hidden absolute top-96 left-1/2 transform -translate-x-1/2 -translate-y-full mx-auto text-center border-2 border-solid rounded-lg p-4 bg-white">
+                <h3 class="text-3xl font-bold pb-2">Congates!</h4>
+                <div class="w-full flex items-center justify-center"><img class="w-10" src="assets/coin.png" alt=""></div>
+                <P class="text-base pb-2">You Have Donated for Human Kind.</P>
+                <h4 class="text-lg font-bold pb-2">Successfully</h5>
+                <button class="btn" onclick="closePopup()">close confirmation</button>
+            </div>
+
+            </div>
         </div>
     </div>
 
@@ -83,10 +94,10 @@
 
  </main>
  <footer class="bg-[#f3f1e6] h-20">
-
  </footer>
     <!--SCRIPTS TAGS STARTS HERE  -->
-    <script src="js/index.js"></script>
     <script src="js/utilities.js"></script>
+    <script src="js/index.js"></script>
+    
 </body>
 </html>
