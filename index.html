@@ -40,15 +40,15 @@
  
  <main class="w-full lg:w-9/12 mx-auto">
     <!-- 1st card -->
-    <div class=" flex flex-1 flex-col lg:flex-row lg:justify-center lg:items-center p-10 gap-5 border-solid border-2  border-gray-200 rounded-xl mb-5">
+    <div id="donate-now-btn" class="flex flex-1 flex-col lg:flex-row lg:justify-center lg:items-center p-10 gap-5 border-solid border-2  border-gray-200 rounded-xl mb-5">
         <!-- image div -->
        <div class="w-full lg:w-2/4"><img src="assets/noakhali.png" alt=""></div>  
        <!-- text div -->
         <div class="w-full lg:w-2/4">
-            <button class="btn mb-5"><img src="assets/coin.png" alt="">500 BDT</button>
+            <button class="btn mb-5"><img src="assets/coin.png" alt=""> <span id="nk-donation-amount">500</span> BDT</button>
             <h4 class="text-lg font-bold mb-5">Donate for Flood at Noakhali, Bangladesh</h4>
             <p class="mb-5">The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-            <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mb-5"/>                                                                    
+            <input id="noakhali-input-field" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mb-5"/>                                                                    
             <button class= "btn bg-[#B4F461] text-lg px-8 font-bold border-none w-full mb-5">Donate Now</button>
         </div>
     </div>
@@ -87,5 +87,6 @@
  </footer>
     <!--SCRIPTS TAGS STARTS HERE  -->
     <script src="js/index.js"></script>
+    <script src="js/utilities.js"></script>
 </body>
 </html>
