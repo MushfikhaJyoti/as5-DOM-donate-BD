@@ -61,7 +61,7 @@ quotaDonate.addEventListener('click', function(){
    // validation
    if(quotaInput <= 0 || isNaN(quotaInput)){
       alert('Invalid Input ❌');
-      document.getElementById('my_modal_1').classList.add('hidden');
+      
    }
 });
 
@@ -85,6 +85,23 @@ document.getElementById('history-btn').addEventListener('click', function(){
       document.getElementById('donate-btn').classList.remove('bg-[#B4F461]');
    document.getElementById('history-btn').classList.add('bg-[#B4F461]');
 });
+
+// blog toggle
+document.getElementById('btn-blog').addEventListener('click', function(){
+   document.getElementById('blog-section').classList.remove('hidden');
+      document.getElementById('donation-section').classList.add('hidden');
+
+      document.getElementById('btn-home').classList.remove('hidden');
+      document.getElementById('btn-blog').classList.add('hidden');
+
+
+  });
+
+  document.getElementById('btn-home').addEventListener('click', function(){
+   document.getElementById('blog-section').classList.add('hidden');
+      document.getElementById('donation-section').classList.remove('hidden');
+
+  });
      
       
    

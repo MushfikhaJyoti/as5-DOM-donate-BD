@@ -26,6 +26,7 @@
      <nav class="bg-[#f3f1e6]">    
          <div class="flex justify-around w-full lg:w-11/12 mx-auto pt-6 pb-16">
             <button id="btn-blog" class= "btn bg-[#B4F461] text-lg px-8 font-bold border-none">Blog</button>
+            <button id="btn-home" class= "btn bg-[#B4F461] text-lg px-8 font-bold border-none hidden">Home</button>
             <p class="flex justify-center items-center text-lg font-extrabold gap-2"> <img class="w-8 border-2 border-dashed" src="assets/logo.png" alt=""> Donate Bnagladesh</p>
             <p class="flex justify-center items-center gap-2 font-bold"><img class="border-2 border-dashed" src="assets/coin.png" alt=""> <span id="nav-amount">10000</span> BDT</p>
          </div>
@@ -126,13 +127,54 @@
 </div>
 </div>
 
+<!-- blog section -->
+<div id="blog-section" class=" hidden w-full lg:w-11/12 mx-auto pt-6 pb-16">
+    <h1 class="text-4xl font-bold mb-6">Important FAQ <i class="fa-regular fa-circle-question w-8"></i></h1>
+   <div class="join join-vertical w-full">
+       <!-- FAQ 1 -->
+       <div class="collapse collapse-arrow join-item border-base-300 border">
+         <input type="radio" name="my-accordion-4" checked="checked" />
+         <div class="collapse-title text-xl font-medium">What is the Document Object Model(DOM)?</div>
+         <div class="collapse-content">
+           <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a web page as a tree of objects, where each node corresponds to part of the document (e.g., elements, attributes, text).</p>
+         </div>
+       </div>
+       <!-- FAQ 2 -->
+       <div class="collapse collapse-arrow join-item border-base-300 border">
+         <input type="radio" name="my-accordion-4" />
+         <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+         <div class="collapse-content">
+           <p>To select an element from the DOM, you use methods that allow you to retrieve elements based on various criteria, like their ID, class, tag, or other attributes.</p>
+         </div>
+       </div>
+       <!-- FAQ 3 -->
+       <div class="collapse collapse-arrow join-item border-base-300 border">
+         <input type="radio" name="my-accordion-4" />
+         <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+         <div class="collapse-content">
+           <p>Event delegation is a technique in the DOM where a single event listener is attached to a parent element to handle events triggered by its child elements. Instead of adding individual listeners to each child, the parent listens for the event and determines which child element triggered it.</p>
+           <p>It is very useful to improve performance, dynamic content handling, simpler codes and many more.</p>
+         </div>
+       </div>
+       <!-- FAQ 4 -->
+       <div class="collapse collapse-arrow join-item border-base-300 border">
+           <input type="radio" name="my-accordion-4" />
+           <div class="collapse-title text-xl font-medium">How do manipulate an element's attributes and styles using the DOM?</div>
+           <div class="collapse-content">
+             <p>By Attributes you can modify an element's attributes (like id, src, alt, etc.) by setting, getting, or removing them. This allows you to change or retrieve properties of elements dynamically.</p> 
+   
+            <p>At the same time style property lets you change an element's inline CSS, allowing you to alter things  like color, size, visibility, or layout directly from JavaScript.</p>
+           </div>
+         </div>
+   
+     </div>
+   </div>
+
 
  <footer class="bg-[#f3f1e6] h-20">
  </footer>
     <!--SCRIPTS TAGS STARTS HERE  -->
     <script src="js/index.js"></script>
-    <script src="js/utilities.js"></script>
-   
-    
-</body>
+      
+    </body>
 </html>
