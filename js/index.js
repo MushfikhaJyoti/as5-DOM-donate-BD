@@ -8,10 +8,16 @@ noakhaliDonate.addEventListener('click', function(){
    const totalNkDonate = noakhaliInput + nkDonationAmount;
    const navNew = navAmount - noakhaliInput;
 
-   document.getElementById('nk-donation-amount').innerText = totalNkDonate;
+    document.getElementById('nk-donation-amount').innerText = totalNkDonate;
    document.getElementById('nav-amount').innerText = navNew;
 
-   document.getElementById('nk-history-amount').innerText = noakhaliInput;
+      document.getElementById('nk-history-amount').innerText = noakhaliInput;
+       
+   // validation
+   if(noakhaliInput <= 0 || isNaN(noakhaliInput)){
+      alert('Invalid Input ❌')
+   }
+
 });
   
 // feni donation section
@@ -28,6 +34,12 @@ feniDonate.addEventListener('click', function(){
    document.getElementById('nav-amount').innerText = navNew;
 
    document.getElementById('feni-history-amount').innerText = feniInput;
+
+    
+   // validation
+   if(feniInput <= 0 || isNaN(feniInput)){
+      alert('Invalid Input ❌')
+   }
 });
 
 
@@ -44,6 +56,13 @@ quotaDonate.addEventListener('click', function(){
    document.getElementById('nav-amount').innerText = navNew;
 
    document.getElementById('quota-history-amount').innerText = quotaInput;
+
+    
+   // validation
+   if(quotaInput <= 0 || isNaN(quotaInput)){
+      alert('Invalid Input ❌');
+      document.getElementById('my_modal_1').classList.add('hidden');
+   }
 });
 
 
