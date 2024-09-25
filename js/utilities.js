@@ -1,12 +1,12 @@
 // popup modal functions
-// const myModal = document.getElementById("my-modal");
+const myModal = document.getElementById("my-modal");
 
-// function openPopup(){
-//    myModal.classList.remove('hidden');
-// };
-// function closePopup(){
-//    myModal.classList.add('hidden');
-// };
+function openPopup(){
+   myModal.classList.remove('hidden');
+};
+function closePopup(){
+   myModal.classList.add('hidden');
+};
 
 
 // button navigation function;

@@ -11,7 +11,7 @@ noakhaliDonate.addEventListener('click', function(){
    document.getElementById('nk-donation-amount').innerText = totalNkDonate;
    document.getElementById('nav-amount').innerText = navNew;
 
-   // document.getElementById('nk-history-amount').innerText = noakhaliInput;
+   document.getElementById('nk-history-amount').innerText = noakhaliInput;
 });
   
 // feni donation section
@@ -26,6 +26,8 @@ feniDonate.addEventListener('click', function(){
 
    document.getElementById('feni-donation-amount').innerText = totalFeniDonate;
    document.getElementById('nav-amount').innerText = navNew;
+
+   document.getElementById('feni-history-amount').innerText = feniInput;
 });
 
 
@@ -40,6 +42,8 @@ quotaDonate.addEventListener('click', function(){
 
    document.getElementById('quota-donation-amount').innerText = totalQuotaDonate;
    document.getElementById('nav-amount').innerText = navNew;
+
+   document.getElementById('quota-history-amount').innerText = quotaInput;
 });
 
 

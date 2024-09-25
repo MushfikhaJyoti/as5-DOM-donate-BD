@@ -74,7 +74,7 @@
             <h4 class="text-lg font-bold mb-5">Donate for Flood relief in Feni, Bangladesh</h4>
             <p class="mb-5">The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
             <input id="feni-input-field" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mb-5"/>                                                                    
-            <button id="feni-donate-btn" class= "btn bg-[#B4F461] text-lg px-8 font-bold border-none w-full mb-5">Donate Now</button>
+            <button id="feni-donate-btn" class= "btn bg-[#B4F461] text-lg px-8 font-bold border-none w-full mb-5" onclick="openPopup()">Donate Now</button>
         </div>
     </div>
 
@@ -88,7 +88,7 @@
             <h4 class="text-lg font-bold mb-5">Aid for injured in the quota movement</h4>
             <p class="mb-5">The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
             <input id="quota-input-field" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mb-5"/>                                                                    
-            <button id="quota-donate-btn" class= "btn bg-[#B4F461] text-lg px-8 font-bold border-none w-full mb-5">Donate Now</button>
+            <button id="quota-donate-btn" class= "btn bg-[#B4F461] text-lg px-8 font-bold border-none w-full mb-5" onclick="openPopup()">Donate Now</button>
         </div>
     </div>
 </main>
@@ -103,12 +103,12 @@
 
 <!-- donation for Feni Section-->
 <div class="w-9/12 mx-auto p-10 gap-5 border-solid border-2  border-gray-200 rounded-xl mb-5">
-<h4 class="text-sm font-bold"> <span> 6500 </span>Taka is Donated for Flood Relief in Feni,Bangladesh</h4>
+<h4 class="text-sm font-bold"> <span id="feni-history-amount"> 00 </span>Taka is Donated for Flood Relief in Feni,Bangladesh</h4>
 <p> Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
 </div>
 <!-- donation for Quota movement section  -->
 <div class="w-9/12 mx-auto p-10 gap-5 border-solid border-2  border-gray-200 rounded-xl mb-5">
-<h4 class="text-sm font-bold"> <span>15500 </span>Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh </h4>
+<h4 class="text-sm font-bold"> <span id="quota-history-amount">00 </span>Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh </h4>
 <p> Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
 </div>
 </div>
