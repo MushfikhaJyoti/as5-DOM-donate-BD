@@ -10,15 +10,15 @@
 
 
 // button navigation function;
-const donateButton = document.getElementById('donate-btn');
- donateButton.addEventListener('click', function (){
-    window.location.href = "../index.html"
- });
+// const donateButton = document.getElementById('donate-btn');
+//  donateButton.addEventListener('click', function (){
+//     window.location.href = "../index.html"
+//  });
 
- document.getElementById('history-btn')
-  .addEventListener('click', function() {
-     window.location.href = "../history.html";
-  });
+//  document.getElementById('history-btn')
+//   .addEventListener('click', function() {
+//      window.location.href = "../history.html";
+//   });
 
   document.getElementById('btn-blog')
   .addEventListener('click', function() {

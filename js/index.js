@@ -10,6 +10,8 @@ noakhaliDonate.addEventListener('click', function(){
 
    document.getElementById('nk-donation-amount').innerText = totalNkDonate;
    document.getElementById('nav-amount').innerText = navNew;
+
+   // document.getElementById('nk-history-amount').innerText = noakhaliInput;
 });
   
 // feni donation section
@@ -38,6 +40,27 @@ quotaDonate.addEventListener('click', function(){
 
    document.getElementById('quota-donation-amount').innerText = totalQuotaDonate;
    document.getElementById('nav-amount').innerText = navNew;
+});
+
+
+
+// navbar's btn clicking function
+document.getElementById('donate-btn').addEventListener('click', function(){
+   document.getElementById('history-section').classList.add('hidden');
+   document.getElementById('donation-section').classList.remove('hidden');
+
+    // btn color changing functions;
+    document.getElementById('donate-btn').classList.add('bg-[#B4F461]');
+    document.getElementById('history-btn').classList.remove('bg-[#B4F461]');
+});
+
+document.getElementById('history-btn').addEventListener('click', function(){
+   document.getElementById('history-section').classList.remove('hidden');
+      document.getElementById('donation-section').classList.add('hidden');
+   
+      // btn color changing functions;
+      document.getElementById('donate-btn').classList.remove('bg-[#B4F461]');
+   document.getElementById('history-btn').classList.add('bg-[#B4F461]');
 });
      
       
