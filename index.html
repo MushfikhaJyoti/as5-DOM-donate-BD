@@ -49,16 +49,29 @@
             <h4 class="text-lg font-bold mb-5">Donate for Flood at Noakhali, Bangladesh</h4>
             <p class="mb-5">The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
             <input id="noakhali-input-field" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mb-5"/>                                                                    
-            <button id="nowakhali-donate" class= "btn bg-[#B4F461] text-lg px-8 font-bold border-none w-full mb-5" onclick="openPopup()">Donate Now</button>
+            <button id="nowakhali-donate" class= "btn bg-[#B4F461] text-lg px-8 font-bold border-none w-full mb-5" onclick="my_modal_1.showModal()">Donate Now</button>
 
             <!-- modal html -->
-            <div id="my-modal" class="hidden absolute top-96 left-1/2 transform -translate-x-1/2 -translate-y-full mx-auto text-center border-2 border-solid rounded-lg p-4 bg-white">
+            <!-- <div id="my-modal" class="hidden absolute top-96 left-1/2 transform -translate-x-1/2 -translate-y-full mx-auto text-center border-2 border-solid rounded-lg p-4 bg-white">
                 <h3 class="text-3xl font-bold pb-2">Congates!</h4>
                 <div class="w-full flex items-center justify-center"><img class="w-10" src="assets/coin.png" alt=""></div>
                 <P class="text-base pb-2">You Have Donated for Human Kind.</P>
                 <h4 class="text-lg font-bold pb-2">Successfully</h5>
                 <button class="btn" onclick="closePopup()">close confirmation</button>
-            </div>
+            </div> -->
+            <dialog id="my_modal_1" class="modal">
+                <div class="modal-box text-center">
+                    <h3 class="text-3xl font-bold pb-2">Congrates!</h4>
+                        <div class="w-full flex items-center justify-center"><img class="w-10" src="assets/coin.png" alt=""></div>
+                        <P class="text-base pb-2">You Have Donated for Human Kind.</P>
+                        <h4 class="text-lg font-bold pb-2">Successfully</h5>
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn">close confirmation</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
 
             </div>
         </div>
@@ -74,7 +87,7 @@
             <h4 class="text-lg font-bold mb-5">Donate for Flood relief in Feni, Bangladesh</h4>
             <p class="mb-5">The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
             <input id="feni-input-field" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mb-5"/>                                                                    
-            <button id="feni-donate-btn" class= "btn bg-[#B4F461] text-lg px-8 font-bold border-none w-full mb-5" onclick="openPopup()">Donate Now</button>
+            <button id="feni-donate-btn" class= "btn bg-[#B4F461] text-lg px-8 font-bold border-none w-full mb-5" onclick="my_modal_1.showModal()">Donate Now</button>
         </div>
     </div>
 
@@ -88,7 +101,7 @@
             <h4 class="text-lg font-bold mb-5">Aid for injured in the quota movement</h4>
             <p class="mb-5">The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
             <input id="quota-input-field" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mb-5"/>                                                                    
-            <button id="quota-donate-btn" class= "btn bg-[#B4F461] text-lg px-8 font-bold border-none w-full mb-5" onclick="openPopup()">Donate Now</button>
+            <button id="quota-donate-btn" class= "btn bg-[#B4F461] text-lg px-8 font-bold border-none w-full mb-5" onclick="my_modal_1.showModal()">Donate Now</button>
         </div>
     </div>
 </main>
